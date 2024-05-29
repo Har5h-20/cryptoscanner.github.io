@@ -1,0 +1,150 @@
+body {
+    background-color: #3a3238;
+    color: #f5e3e0;
+}
+
+nav {
+    background-color: rgb(30,30,30);
+    display: flex;
+    align-items: center;
+    padding: 1px 50px;
+}
+
+nav .logo h4 {
+    color: #e8b4bc;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo {
+    margin-right: 30px;
+}
+
+nav .search {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+nav .search input {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #f5e3e0;
+    border-radius: 4px;
+}
+
+nav .login .login-btn {
+    background-color: #e8b4bc;
+    color: #3a3238;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav .login .login-btn:hover {
+    background-color: #d282a6;
+}
+
+.crypto-prices {
+    color: #f5e3e0;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgb(10,10,1s0);
+    border-bottom: 1px solid #ddd;
+}
+
+.crypto-prices div {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 1rem;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.ticker-wrap {
+    display: flex;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+}
+
+.top {
+    background-color: black;
+    display: flex;
+}
+
+.top .top-right img {
+    padding-top: 10px;
+    height: 300px;
+    width: 400px;
+}
+
+.top .top-left .top-left-content {
+    padding-left: 20px;
+}
+
+.top .top-left .top-left-content h1 {
+    color: aqua;
+}
+
+.top .top-left .top-left-content p {
+    color: #cbbbee;
+}
+
+.top .top-left .top-left-content .top-left-btn {
+    background-color: skyblue;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main-content {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.crypto-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.crypto-section .bitcoin,
+.crypto-section .ethereum,
+.crypto-section .matic {
+    background-color:black;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+
+.tradingview-widget-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.bitcoin img{
+    height: 50px;
+    width: 70px;
+}
+
+.ethereum img{
+    height: 50px;
+    width: 70px;
+}
+.matic img{
+    height: 50px;
+    width: 70px;
+}
+

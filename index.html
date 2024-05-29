@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>Crypto Scanner</title>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+</head>
+<body>
+    <div class="crypto-prices">
+        <div class="ticker-wrap">
+            <div id="btc-price">BTC: Loading...</div>
+            <div id="eth-price">ETH: Loading...</div>
+            <div id="dot-price">MATIC: Loading...</div>
+            <div id="ada-price">ADA: Loading...</div>
+            <div id="xrp-price">XRP: Loading...</div>
+            <div id="ltc-price">LTC: Loading...</div>
+            <div id="bnb-price">BNB: Loading...</div>
+            <div id="sol-price">SOL: Loading...</div>
+        </div>
+    </div>
+    <nav>
+        <div class="logo">
+            <h4>.CRYpto ScanneR</h4>
+        </div>
+        <div class="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="login">
+            <button class="login-btn">Login</button>
+        </div>
+    </nav>
+    <header>
+        <div class="top">
+            <div class="top-left">
+                <div class="top-left-content">
+                    <h1>Get the latest crypto prices</h1>
+                    <p>Get the latest prices of your favorite cryptocurrencies</p>
+                    <button class="top-left-btn">Get Started</button>
+                </div>
+            </div>
+            <div class="top-right">
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3J5cHRvfGVufDB8fDB8fHww" alt="Crypto Image">
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="crypto-section">
+                <div class="bitcoin">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png" alt="Bitcoin">
+                    <h2>Bitcoin</h2>
+                    <p>Bitcoin is a decentralized digital currency, without a central bank or single administrator, that can be sent from user to user on the peer-to-peer bitcoin network without the need for intermediaries.</p>
+                    <button class="main-btn">Bitcoin Fundamental</button>
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_btcusdt"></div>
+                        <script type="text/javascript">
+                        new TradingView.widget({
+                            "width": "100%",
+                            "height": 400,
+                            "symbol": "BINANCE:BTCUSDT",
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "dark",
+                            "style": "1",
+                            "locale": "en",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "allow_symbol_change": true,
+                            "container_id": "tradingview_btcusdt"
+                        });
+                        </script>
+                    </div>
+                </div>
+                <div class="ethereum">
+                    <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/1027.png" alt="Ethereum">
+                    <h2>Ethereum</h2>
+                    <p>Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, fraud or third party interference.</p>
+                    <button class="main-btn">Ethereum Fundamental</button>
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_ethusdt"></div>
+                        <script type="text/javascript">
+                        new TradingView.widget({
+                            "width": "100%",
+                            "height": 400,
+                            "symbol": "BINANCE:ETHUSDT",
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "dark",
+                            "style": "1",
+                            "locale": "en",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "allow_symbol_change": true,
+                            "container_id": "tradingview_ethusdt"
+                        });
+                        </script>
+                    </div>
+                </div>
+                <div class="matic">
+                    <img src="https://s3.coinmarketcap.com/static-gravity/image/b8db9a2ac5004c1685a39728cdf4e100.png" alt="Matic">
+                    <h2>Matic</h2>
+                    <p>Matic Network brings massive scale to Ethereum using an adapted version of Plasma with PoS based side chains.</p>
+                    <button class="main-btn">Matic Fundamental</button>
+
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_ethusdt"></div>
+                        <script type="text/javascript">
+                        new TradingView.widget({
+                            "width": "100%",
+                            "height": 400,
+                            "symbol": "BINANCE:MATICUSDT",
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "dark",
+                            "style": "1",
+                            "locale": "en",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "allow_symbol_change": true,
+                            "container_id": "tradingview_MATICusdt"
+                        });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
